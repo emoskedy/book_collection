@@ -1,0 +1,26 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2024-01-19 17:49:26.324571000 Z
+    - 2024-01-19 17:49:26.324571000 Z
+
+---
+books:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - The hobbit
+    - 2024-01-19 17:57:10.169683000 Z
+    - 2024-01-19 17:57:10.169683000 Z
