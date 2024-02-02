@@ -16,8 +16,7 @@ RSpec.describe "Books", type: :request do
         post books_path, params: { book: { title: 'New Book Title', price: 19.99, published_date: Date.today } }
         expect(Book.count).to eq(0)
         expect(response).to have_http_status(:unprocessable_entity)
-        expect(response.body).to include('Author can't be blank')
+        expect(response.body).to include('Author can\'t be blank')
       end
     end
-  end
 end
