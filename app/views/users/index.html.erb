@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to "Show this user", user %>
+    </p>
+  <% end %>
+</div>
+
+<br> 
+
+<%= link_to "New user", new_user_path %>
+
+<br>
+
+<%= link_to "Back to user books", user_books_path %>

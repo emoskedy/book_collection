@@ -2,6 +2,9 @@
   <p>
     <strong>Title:</strong>
     <%= book.title %>
+    <p><strong>Author:</strong> <%= book.author %></p>
+    <p><strong>Price:</strong> <%= number_to_currency(book.price) %></p>
+    <p><strong>Published Date:</strong> <%= book.published_date.try(:strftime, "%B %e, %Y") %></p>
   </p>
 
 </div>
